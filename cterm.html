@@ -79,3 +79,66 @@
     <li><em>  ln -s < adresse à pointer> < nom du lien symbolique> </em>: Créer un lien symbolique.</li>
                     <!--4° part'title & commands list-->
   </ul>
+
+  <h2 id="aff">Afficher</h2>
+  <ul>
+    <li><em>  cat < fichier> </em>: Affiche le contenu du fichier dans la console en bloc.</li>
+    <li><em>less < fichier> </em>: Affiche le contenu du fichier dans la console avec défilement. Entrer q pour quitter.</li>
+    <li><em>more < fichier> </em>: Similaire à less.</li>
+    <li><em>head < fichier> </em>: Affiche le début du fichier dans la console.</li>
+    <li><em>head -n 10 < fichier></em>: Affiche les dix premières lignes du fichier dans la console.</li>
+    <li><em>tail < fichier> </em>: Affiche la fin du fichier dans la console.</li>
+    <li><em>tail -n 10 < fichier> </em>: Affiche les dix dernières lignes du fichier dans la console.</li>
+    <li><em>tail -f < fichier> </em>: Affiche toutes nouvelles lignes dans la console.</li>
+</ul><!--5° part'title & commands list-->
+
+<h2 id="chan">Changer d'état</h2>
+<ul>
+    <li><em> chgrp (-R) < nom du groupe> < adresse> </em>: Change le groupe du ou des fichiers/dossiers.</li>
+    <li><em>  chown (-R) < nom de propriétaire> < adresse> </em>: Change le propriétaire du ou des fichiers/dossiers.</li>
+    <li><em>-R (facultatif) pour « Récursif » </em>: S'applique à tous les dossiers enfants.</li>
+</ul>
+<!--6° part'title & commands list-->
+
+<h2 id="cher">Chercher</h2>
+<ul>
+      find :
+          <li><em>find / -name fichier </em>: rechercher « ficher » dans tous les dossiers à partir de la racine.</li>
+          <li><em>find -name < nom> </em>: Cherche les fichiers ou dossiers contenant < nom> (il est possible d'utiliser une expression).</li>
+          <li><em>find ./ -type f | wc -l </em>: Connaître le nombre de fichiers dans un dossier (et ses enfants).</li>
+        <li><em> find ./ -type d | wc -l </em>: Connaître le nombre de dossiers dans un dossier (et ses enfants).</li>
+        </br>
+      <em>locate < nom> </em>: Cherche les fichiers ou dossiers contenant < nom>.</br>
+
+          <em>updatedb </em>permet de mettre à jour la base de données de recherche de locate.</br>
+
+      <li><em> grep '< motif>' < fichiers> </em>: recherche < motif> dans le contenu des fichiers</li>
+      <li><em>grep '< motif>' * </em>: recherche < motif> dans le contenu de tous les fichiers du répertoire</li>
+      <li><em>grep '< motif>' -R * </em>: recherche < motif> dans le contenu de tous les fichiers du répertoire et des sous-répertoires</li>
+      <li><em>grep -rn '< motif>' . </em>: recherche < motif> dans le contenu de tous les fichiers du répertoire courant et des sous-répertoires et donne le ou les emplacements trouvés (fichier et numéro de ligne)</li>
+            <!--7° part'title & commands list-->
+
+</ul>
+
+<h2 id="tel">Télécharger</h2>
+<ul>
+
+      wget :
+          <li><em>wget '< url>' </em>: Pour télécharger un fichier.</li>
+
+      scp :
+          <li><em> scp -r < user>@< site.net ou IP>:< chemin> < destination> </em>: Pour télécharger un fichier ou un dossier depuis serveur distant en passant par SSH.</li>
+
+  Exemple :<em> « scp -r -p root@site.net:/home/user . » </em>qui va créer un copie du dossier 'user' distant dans le dossier courant en gardant les informations de ces fichiers (heures, accès, etc.) (-p) de façon récursive (-r).
+      </ul>
+
+<!--8° part'title & commands list-->
+
+<h2 id="Q">Fermer / Quitter / Déconnecter</h2>
+<ul>
+  <li><em>  exit</em></li>
+        </ul>
+        <!--9° part'title & commands list-->
+</body>
+
+</html>
