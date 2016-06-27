@@ -1,0 +1,35 @@
+h1
+{
+  color: white;
+  text-align :center; /* tous les éléments h1 seront de police de couleur blanche et le texte aligné au centre */
+
+}
+
+h2
+{
+  color: white;
+  text-align :center;  /*tous les éléments h2 seront de police de couleur blanche, le texte sera centré, encadré en blanc par des bordures de style goove */
+
+  border-color: white;
+  border-style: groove;
+}
+
+em
+{
+  color: grey ;
+  font-family:monospace; /* tous les éléments em seront de police de couleur grise, de style monospace et de taille 15pt */
+  font-size: 15pt
+}
+
+html
+
+{
+  background-color: black; /* tous les éléments compris entre les balises html auront pour couleur de font le noir */
+}
+body
+ {
+   color: white; /* tous les éléments compris entre les balises body seront alignés à gauche (à l'exception de h) et de couleur blanche (à l'exception de em)
+  text-align:left;
+
+
+}
